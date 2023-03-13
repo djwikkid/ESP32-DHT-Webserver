@@ -4,8 +4,8 @@
 #include <ESPmDNS.h>
 #include <DHT.h>
 
-const char *ssid = "My-Network";
-const char *password = "chaker123456";
+const char *ssid = "MyWiFi_1221";
+const char *password = "music4eva";
 
 WebServer server(80);
 DHT dht(26, DHT11);
@@ -55,7 +55,7 @@ void setup(void) {
   dht.begin();
   
   WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
+  WiFi.begin(MyWiFi_1221, music4eva);
   Serial.println("");
 
   // Wait for connection
